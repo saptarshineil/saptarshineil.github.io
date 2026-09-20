@@ -207,3 +207,27 @@ footer{border-top:1px solid var(--line);padding-block:32px;font-size:14px;color:
   html{scroll-behavior:auto;}
   *{transition-duration:.01ms !important;}
 }
+
+.pub-group{
+  margin: 34px 0 14px;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  color: var(--fg-subtle);
+  border-bottom: 1px solid var(--rule, #e5e5e5);
+  padding-bottom: 6px;
+}
+.pub-group:first-of-type{ margin-top: 18px; }
+
+.pub .links{
+  display: block;
+  margin-top: 6px;
+  font-size: 13.5px;
+}
+.pub .links a{
+  margin-right: 14px;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+}
+.pub .a strong{ font-weight: 700; }
