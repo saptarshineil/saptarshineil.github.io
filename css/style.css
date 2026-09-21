@@ -231,3 +231,22 @@ footer{border-top:1px solid var(--line);padding-block:32px;font-size:14px;color:
   border-bottom: 1px solid currentColor;
 }
 .pub .a strong{ font-weight: 700; }
+
+.sectionbar { display: none; }
+
+@media (max-width: 768px) {
+  .sectionbar {
+    display: flex; gap: .5rem;
+    position: sticky; top: 56px; z-index: 90;
+    padding: .5rem .75rem;
+    overflow-x: auto; -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    background: #fff; border-bottom: 1px solid #e8e8e8;
+  }
+  .sectionbar::-webkit-scrollbar { display: none; }
+  .sectionbar a {
+    flex: 0 0 auto; padding: .4rem .8rem;
+    border: 1px solid #ddd; border-radius: 999px;
+    font-size: .85rem; text-decoration: none; white-space: nowrap;
+  }
+}
